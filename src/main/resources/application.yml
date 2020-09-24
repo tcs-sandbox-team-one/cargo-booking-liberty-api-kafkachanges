@@ -39,7 +39,7 @@ spring:
     url: >-
       jdbc:mysql://mysql-cargo-dev:3306/bookingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST&useSSL=false&allowPublicKeyRetrieval=true
     username: bookingmsdb
-    password: password
+    password: bookingmsdb
 swagger:
   baseApiPackage:
     - com.cargotracker
