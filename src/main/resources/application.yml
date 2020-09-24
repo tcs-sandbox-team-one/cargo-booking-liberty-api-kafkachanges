@@ -33,12 +33,12 @@ spring:
           ssl:
             protocol: TLSv1.2
             truststore:
-              location: E:\Eclipse WS\JKS\es-cert.jks
+              location: /config/jks/es-cert.jks
               password: password
   datasource:
     url: >-
-      jdbc:mysql://localhost:3306/bookingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST
-    username: root
+      jdbc:mysql://10.242.0.6:3306/bookingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST&useSSL=false&allowPublicKeyRetrieval=true
+    username: bookingmsdb
     password: password
 swagger:
   baseApiPackage:
